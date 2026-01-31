@@ -1,0 +1,971 @@
+:root {
+    --var-myx: rgb(0, 0, 0);
+}
+
+/* start font setting */
+@font-face {
+    font-family: 'dirooz';
+    src: url('./asset/font/dirooz/Dirooz.eot');
+    src: url('./asset/font/dirooz/Dirooz.eot?#iefix') format('embedded-opentype'),
+         url('./asset/font/dirooz/Dirooz.woff2') format('woff2'),
+         url('./asset/font/dirooz/Dirooz.woff') format('woff'),
+         url('./asset/font/dirooz/Dirooz.ttf') format('truetype');
+
+    font-family: 'vazir-bold';
+    src: url('./asset/font/vazir/Vazir-Bold.eot');
+    src: url('./asset/font/vazir/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+         url('./asset/font/vazir/Vazir-Bold.woff2') format('woff2'),
+         url('./asset/font/vazir/Vazir-Bold.woff') format('woff'),
+         url('./asset/font/vazir/Vazir-Light.ttf') format('truetype');
+}
+/* end font setting */
+
+* {
+    direction: rtl;
+    text-align: right;
+    box-sizing: border-box;
+   
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: dirooz, 'Segue UI', Tahoma, sans-serif;
+
+}
+
+h1{
+    font-family: vazir-bold, 'Segue UI', Tahoma, sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+nav,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: bold;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid rgb(27, 26, 26);
+    box-shadow: 0 0 5px 3px rgb(83, 94, 126, 0.1);
+}
+
+.responsive-svg {
+    width: 0.75rem;
+    height: auto;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.bg-title {
+    background-color: rgb(204, 166, 95);
+    color: white;
+    padding: 0.5rem;
+    padding-right: 1rem;
+}
+
+/* start font-size responsive */
+body {
+    font-size: clamp(0.875rem, 1.1vw, 1rem);
+}
+
+.melow-h1{
+    font-size: clamp(1.5rem, 3.8vw, 2.5rem);
+}
+
+h1 {
+    font-size: clamp(2rem, 3.8vw, 3.2rem);
+}
+
+h2 {
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 2.8vw, 1.8rem);
+}
+
+h4 {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+h5 {
+    font-size: clamp(1.125rem, 1.8vw, 1.25rem);
+}
+
+h6 {
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+}
+
+p {
+    font-size: clamp(0.875rem, 1.1vw, 1rem);
+}
+
+small {
+    font-size: 0.8rem
+}
+
+button,
+input,
+label {
+    font-size: clamp(0.8rem, 0.9vw, 1rem);
+}
+
+/* end font-size responsive */
+
+/* start accardion section */
+
+.accardion {
+    position: relative;
+
+}
+
+.accardion::after {
+    content: '\002771';
+    transition: all 0.5s ease;
+    position: absolute;
+    left: 2%;
+}
+
+.accardion-active::after {
+
+    transform: rotate(-90deg);
+    transition: all 0.5s ease;
+}
+
+.pannel {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+
+/* end accardion section */
+
+/* start header */
+
+/* start headr imgs */
+
+.header {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 40vh;
+}
+
+.home-header {
+    background-image: url('./asset/img/kitchen.webp');
+    height: 80vh;
+
+}
+
+.vila-design-header {
+    background-image: url('./asset/img/room.webp');
+}
+
+.apartment-design-header {
+    background-image: url('./asset/img/room.webp');
+}
+
+.roof-design-header {
+    background-image: url('./asset/img/room.webp');
+}
+
+.store-design-header {
+    background-image: url('./asset/img/room.webp');
+}
+
+.vila-rebuild-header {
+    background-image: url('./asset/img/room.webp');
+}
+
+.apartment-rebuild-header {
+    background-image: url('./asset/img/room.webp');
+}
+
+.office-rebuild-header {
+    background-image: url('./asset/img/room.webp');
+}
+
+.work-decoration-header {
+    background-image: url('./asset/img/room.webp');
+}
+
+.home-decoration-header {
+    background-image: url('./asset/img/room.webp');
+}
+
+.project-header {
+    background-image: url('./asset/img/room.webp');
+}
+
+/* end headr imgs */
+.cover-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(34, 33, 33, 0.5);
+    pointer-events: none;
+    z-index: 0;
+
+}
+
+/* start menu */
+#menu-bar {
+    position: fixed;
+    width: 100vw;
+    z-index: 998;
+    top: 0;
+    transition: top 0.8s ease, background-color 0.8s ease;
+}
+
+#regular-menu {
+    position: sticky;
+    background-color: black;
+    transition: all 0.8s ease;
+    z-index: 998;
+}
+
+
+/* start mobile menu */
+
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60vw;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    background-color: whitesmoke;
+    z-index: 1000;
+}
+
+.mob-menu {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100vh;
+}
+
+#mobile-nav.open {
+    transform: translateX(0);
+}
+
+#mobile-nav.open~#overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#mobile-nav li {
+    width: 100%;
+}
+
+#mobile-nav a {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 0.8rem;
+    color: black;
+    display: inline-block;
+    background-color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+#mobile-nav a:hover {
+    background-color: rgb(204, 166, 95);
+    color: white;
+}
+
+#overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+}
+
+/* why I must use important here? */
+.mob-menu .father-pannel>li>a {
+    background-color: rgb(204, 166, 95) !important;
+    color: white !important;
+}
+
+.mob-menu .father-pannel .main-item .pannel {
+    background-color: rgb(247, 238, 226);
+}
+
+/* end mobile menu */
+
+/* end menu */
+
+.logo {
+    height: 9vh;
+    width: auto;
+
+}
+
+
+
+.hero-bar h1 {
+    text-shadow: 2px 2px 9px rgb(255, 255, 255);
+    color: whitesmoke;
+}
+
+.logo-wrapper {
+    text-align: end;
+}
+
+@media (min-width: 768px) {
+    #hamber {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        width: 100%;
+    }
+
+    .logo-wrapper {
+        text-align: center;
+    }
+}
+
+@media (max-width:768px) {
+    #hamber {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 1;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+
+}
+
+/* start descktop menu */
+
+.desktop-nav {
+    flex: 2;
+}
+
+.main-menu {
+    width: 100%;
+    height: 100%;
+}
+
+.main-menu .main-item {
+    position: relative;
+}
+
+.main-menu>.main-item>a>span {
+    position: relative;
+}
+
+.main-menu>.main-item>a>span::after {
+    content: '\002771';
+    position: absolute;
+    left: -25%;
+    font-weight: 500;
+    transform: rotate(-90deg);
+    color: white;
+    margin-left: 2px;
+}
+
+.main-menu .main-item .main-item>a::after {
+    content: '\002771';
+    position: absolute;
+    left: 1%;
+    font-weight: 500;
+
+
+}
+
+.main-menu .sub-menu {
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* main menu */
+.main-menu>.main-item>.sub-menu {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.main-menu>.main-item>.sub-menu>li:last-child>a {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+/* sub menu */
+.main-menu>.main-item>.sub-menu>.main-item>.sub-menu {
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.main-menu>.main-item>.sub-menu>.main-item>.sub-menu>li:first-child>a {
+    border-top-left-radius: 0.5rem;
+}
+
+.main-menu>.main-item>.sub-menu>.main-item>.sub-menu>li:last-child>a {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+
+
+
+
+.main-menu .main-item:hover>.sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+}
+
+.main-menu .sub-menu li {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px dashed black;
+}
+
+.main-menu .sub-menu li:last-child {
+
+    border-bottom: none;
+}
+
+
+.main-menu .sub-menu li a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    color: rgb(29, 28, 28);
+    background-color: whitesmoke;
+    padding: 1rem 0.5rem 1rem 3rem;
+    position: relative;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+.main-menu .sub-menu li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.main-menu .main-menu>li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-item>a {
+    cursor: pointer;
+}
+
+/* why when a dosen't have href this wouldn't work? */
+.main-menu>li>a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    position: relative;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    color: whitesmoke !important;
+
+
+}
+
+.main-menu>li>a::before {
+    content: "";
+    background-color: rgb(204, 166, 95);
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    transition: all 0.2s ease;
+
+}
+
+.main-menu>li>a:hover::before {
+    width: clamp(100px, 120%, 180px);
+
+}
+
+.main-menu>.main-item>a:hover::before {
+    width: 0;
+}
+
+.main-menu>.main-item>.sub-menu {
+    width: 150%;
+    right: 0;
+    top: 80%;
+
+
+
+}
+
+.main-menu .main-item>.sub-menu>.main-item>.sub-menu {
+    width: 100%;
+    right: 100%;
+    top: 0;
+
+}
+
+
+
+/* end descktop menu */
+
+
+
+.hero-bar {
+    position: inherit;
+    z-index: 1;
+    top: 45%;
+}
+
+.home-header .hero-bar {
+    top: 30%;
+}
+
+.btns button {
+
+    border-radius: 1.5rem;
+    background-color: rgb(204, 166, 95);
+    color: white;
+    transition: all 0.3s ease;
+
+    text-align: center;
+    padding: 0 0.5rem;
+
+
+
+}
+
+.btns button a {
+    transition: color 0.3s ease;
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem 0.125rem;
+    display: inline-block;
+}
+
+.btns button:hover {
+    background-color: white;
+
+    color: rgb(204, 166, 95);
+}
+
+.btns button:hover>a {
+    color: rgb(204, 166, 95);
+}
+
+.btns button a {
+    color: inherit;
+}
+
+/* end header */
+
+/* start fixed phone button */
+#fixed-phone {
+    position: fixed;
+    width: 60px;
+    bottom: 15px;
+    right: 15px;
+    z-index: 998;
+    background-color: rgb(252, 247, 237);
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+
+}
+
+#fixed-phone svg {
+    width: 100%;
+}
+
+/* end fixed phone button */
+
+/* start question answer box */
+.quan-box {
+    background-color: white;
+    box-shadow: 0 0 5px 3px rgb(83, 94, 126, 0.1);
+    border: 1px dotted whitesmoke;
+    border-bottom: none;
+
+}
+
+.question {
+    margin: 0;
+    padding: 1rem;
+    background-color: rgb(204, 166, 95);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* end question answer box */
+
+/* start services */
+.main-title {
+    position: relative;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: black;
+
+}
+
+.back-title {
+    position: absolute;
+    right: 0;
+    color: black;
+    top: -40%;
+    font-size: clamp(2.5rem, 4.5vw, 3.5rem);
+    opacity: 0.1;
+    white-space: nowrap;
+
+
+}
+
+.dashed-box {
+    border: 1px dashed gray;
+    border-radius: 0.5rem;
+    padding: 1.5rem 0.5rem;
+    margin: 0 0.5rem;
+}
+
+
+
+
+.services a {
+    height: 100%;
+    color: black;
+    width: 100%;
+}
+
+.services svg {
+
+    transition: scale 0.3s ease;
+}
+
+.services a:hover>div>svg {
+    scale: 1.4;
+    --var-myx: rgb(246, 161, 95);
+}
+
+.serv-description {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+/* end services */
+
+/* start why us */
+.reason-wrapper {
+    width: 80%;
+}
+
+.reason {
+    padding: 1rem;
+    border: 1px dashed gray;
+    box-shadow: 1px 1px 20 rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    width: 80%;
+}
+
+@media (max-width:768px) {
+
+    .reason-wrapper {
+        width: 100%;
+    }
+
+    .reason {
+        width: 100%;
+        margin: 0 0.5rem;
+    }
+}
+
+.why-title {
+    color: rgb(246, 161, 95);
+    font-weight: bolder;
+}
+
+/* end why us */
+
+/* start exprience */
+.exprience {
+    background-color: rgb(204, 166, 95);
+    padding: 1rem 0;
+
+}
+
+.exp-number {
+    font-size: clamp(2rem, 4.5vw, 3.25rem);
+    font-weight: 700;
+    color: white;
+}
+
+.exp-title {
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+    font-weight: 700;
+    color: white;
+}
+
+/* end exprience */
+
+/* start order registration form */
+.order-form-wrapper {
+    position: relative;
+    background-image: url('./asset/img/roomsquare.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 50vh;
+}
+
+@media (max-width: 767px){
+    .order-form-wrapper{
+        height: 80vh;
+    }
+}
+
+.order-form-wrapper h2,
+.order-form-wrapper p,
+.order-form-wrapper span {
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.order-form-wrapper form {
+    position: relative;
+}
+
+.order-form-wrapper input,
+.order-form-wrapper button {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    font: inherit;
+    outline: none;
+    width: 100%;
+}
+
+.order-form-wrapper input:focus,
+.order-form-wrapper button:focus {
+
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.order-form-wrapper button {
+    background-color: rgb(204, 166, 95);
+    color: white;
+    transition: all .3s ease;
+}
+
+.order-form-wrapper button:hover {
+    background-color: white;
+    color: rgb(204, 166, 95);
+}
+
+
+/* end order registration form */
+
+/* start articles */
+
+.box-card {
+    border: 1px dashed gray;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.img-part {
+    width: 100%;
+
+}
+
+.img-part img {
+    width: 100%;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+
+
+.title-part a {
+    color: black;
+
+}
+
+
+/* end articles */
+
+/* start footer */
+footer {
+    background-color: rgb(204, 166, 95);
+}
+
+footer a,
+footer h5,
+footer span,
+footer p {
+    color: white;
+}
+
+footer a {
+    transition: transform 0.3s ease;
+    transform-origin: right;
+    display: inline-block;
+}
+
+footer a:hover {
+    transform: scale(1.2);
+
+}
+
+footer svg {
+    width: 3%;
+    height: auto;
+}
+
+.ltr {
+    text-align: left;
+    direction: ltr;
+    unicode-bidi: bidi-override;
+}
+
+@media (max-width : 768px) {
+    footer .social-media {
+        justify-content: center !important;
+    }
+}
+
+.social-media svg {
+    width: 80%;
+    max-width: 70px;
+}
+
+/* end footer */
+
+/* start copy right bar */
+.copy-right {
+    background-color: rgb(122, 99, 54);
+}
+
+.copy-right small {
+    color: rgb(199, 194, 194);
+}
+
+/* end copy right bar */
+
+/* contact us */
+.info a {
+    color: black;
+}
+
+.info span {
+    font-weight: bold;
+}
+
+.child-info {
+    padding: 1rem 0;
+    border-bottom: 2px solid black;
+}
+
+#msg-form input,
+#msg-form textarea,
+#msg-form button {
+    font-weight: bold;
+    width: 100%;
+    border-radius: 25px;
+}
+
+#msg-form input,
+#msg-form textarea {
+    border: 1px solid gray;
+}
+
+
+.error-msg {
+
+    font-size: clamp(0.8rem, 1vw, 0.9rem);
+    color: rgb(245, 72, 72);
+    font-weight: bolder;
+    margin-right: 5px;
+
+}
+
+.success-msg {
+    font-size: clamp(0.8rem, 1vw, 0.9rem);
+    color: rgb(54, 141, 54);
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+/* contact us */
+
+/* start swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* end swiper */

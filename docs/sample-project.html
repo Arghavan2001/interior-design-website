@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پروژه | نمونه</title>
+    <link rel="stylesheet" href="./dist/aos/aos.css">
+    <link rel="stylesheet" href="./dist/swiper/swiper.css">
+    <link rel="stylesheet" href="./dist/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- start header -->
+    <header class="project-header header">
+        <div class="cover-overlay"></div>
+              <!-- start menu-bar and desktop nav -->
+     <div id="menu-bar" class="ps-4 pe-4 d-flex">
+        <nav class="desktop-nav">
+            <ul class="main-menu d-flex justify-content-center align-items-stretch ">
+                <li class="flex-1"><a href="index.html">خانه</a></li>
+                <li class="main-item flex-1">
+                    <a><span>خدمات ما</span></a>
+                    <ul class="sub-menu d-flex flex-column align-items-stretch">
+                        <li class="main-item"><a>طراحی و ساخت</a>
+                            <ul class="sub-menu d-flex flex-column align-items-stretch">
+                                <li><a href="./serv-design-vila.html">طراحی و ساخت ویلا</a></li>
+                                <li><a href="./serv-design-apartment.html">طراحی و ساخت آپارتمان</a></li>
+                                <li><a href="./serv-design-roof-garden.html">طراحی و ساخت روف گاردن</a></li>
+                                <li><a href="./serv-design-store.html">طراحی و ساخت مغازه</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-item"><a>بازسازی</a>
+                            <ul class="sub-menu d-flex flex-column align-items-stretch">
+                                <li><a href="./serv-rebuild-vila.html">بازسازی ویلا</a></li>
+                                <li><a href="./serv-rebuild-apartment.html">بازسازی داخلی آپارتمان</a></li>
+                                <li><a href="./serv-rebuild-office.html">بازسازی دفترکار</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-item"><a>دکوراسیون داخلی</a>
+                            <ul class="sub-menu d-flex flex-column align-items-stretch">
+                                <li><a href="./serv-decoration-home.html">دکوراسیون مسکونی</a></li>
+                                <li><a href="./serv-decoration-work.html">دکوراسیون اداری/تجاری</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="flex-1"><a href="./archive-project.html">نمونه کارها</a></li>
+            </ul>
+        </nav>
+
+        <div id="hamber">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                    class="main-grid-item-icon" fill="white" stroke="white" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2">
+                    <line x1="3" x2="21" y1="12" y2="12" />
+                    <line x1="3" x2="21" y1="6" y2="6" />
+                    <line x1="3" x2="21" y1="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="logo-wrapper flex-1">
+            <img src="./asset/img/logo-white.webp" alt="logo" class="logo">
+        </div>
+
+        <nav class="desktop-nav">
+            <ul class="main-menu d-flex justify-content-center align-items-stretch">
+                <li class="flex-1"><a href="./archive-article.html">وبلاگ</a></li>
+                <li class="flex-1"><a href="./about-us.html">درباره ما</a></li>
+                <li class="flex-1"><a href="./contact-us.html">تماس با ما</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- end menu-bar and desktop nav -->
+
+        <!-- start mobile nav -->
+        <nav id="mobile-nav">
+            <div class="d-flex justify-content-end mt-2 mb-2">
+                <button class="cross" aria-label="close button">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        width="24" height="24" viewBox="0 0 256 256" xml:space="preserve">
+                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                            transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                            <path
+                                d="M 11 90 c -2.815 0 -5.63 -1.074 -7.778 -3.222 c -4.295 -4.296 -4.295 -11.261 0 -15.557 l 68 -68 c 4.297 -4.296 11.26 -4.296 15.557 0 c 4.296 4.296 4.296 11.261 0 15.557 l -68 68 C 16.63 88.926 13.815 90 11 90 z"
+                                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(214,0,0); fill-rule: nonzero; opacity: 1;"
+                                transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path
+                                d="M 79 90 c -2.815 0 -5.63 -1.074 -7.778 -3.222 l -68 -68 c -4.295 -4.296 -4.295 -11.261 0 -15.557 c 4.296 -4.296 11.261 -4.296 15.557 0 l 68 68 c 4.296 4.296 4.296 11.261 0 15.557 C 84.63 88.926 81.815 90 79 90 z"
+                                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(214,0,0); fill-rule: nonzero; opacity: 1;"
+                                transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <ul class="mob-menu d-flex flex-column">
+                <li><a href="./index.html">خانه</a></li>
+                <li class="main-item"><a class="accardion">خدمات ما</a>
+                    <ul class="sub-menu flex-column align-items-stretch pannel father-pannel">
+                        <li class="main-item"><a class="accardion">طراحی و ساخت</a>
+                            <ul class="sub-menu flex-column align-items-stretch pannel">
+                                <li><a href="./serv-design-vila.html">طراحی و ساخت ویلا</a></li>
+                                <li><a href="./serv-design-apartment.html">طراحی و ساخت آپارتمان</a></li>
+                                <li><a href="./serv-design-roof-garden.html">طراحی و ساخت روف گاردن</a></li>
+                                <li><a href="./serv-design-store.html">طراحی و ساخت مغازه</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-item"><a class="accardion">بازسازی</a>
+                            <ul class="sub-menu flex-column align-items-stretch pannel">
+                                <li><a href="./serv-rebuild-vila.html">بازسازی ویلا</a></li>
+                                <li><a href="./serv-rebuild-apartment.html">بازسازی داخلی آپارتمان</a></li>
+                                <li><a href="./serv-rebuild-office.html">بازسازی دفترکار</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-item"><a class="accardion">دکوراسیون داخلی</a>
+                            <ul class="sub-menu flex-column align-items-stretch pannel">
+                                <li><a href="./serv-decoration-home.html">دکوراسیون مسکونی</a></li>
+                                <li><a href="./serv-decoration-work.html">دکوراسیون اداری/تجاری</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./archive-project.html">نمونه کارها</a></li>
+                <li><a href="./archive-article.html">وبلاگ</a></li>
+                <li><a href="./about-us.html">درباره ما</a></li>
+                <li><a href="./contact-us.html">تماس با ما</a></li>
+
+
+            </ul>
+        </nav>
+        <!-- end mobile nav -->
+        <div id="overlay"></div>
+
+        <!-- start hero bar -->
+        <div class="hero-bar">
+            <h1 class="text-center">بازسازی منزل در اکباتان</h1>
+           
+        </div>
+        <!-- end hero bar -->
+
+    </header>
+    <!-- end header -->
+     <main>
+        <div>
+            <h2 class="text-center bg-title">اطلاعات پروژه</h2>
+        </div>
+        <div class="container">
+            
+            <div class="row d-flex justify-content-center mt-5 mb-5">
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <h5 class="col-6">لوکیشن</h5>
+                        <h6 class="col-6">اکباتان، محدوده شرقی</h6>
+                    </div>
+                    <hr>
+               <div class="row">
+                <h5 class="col-6">مساحت</h5>
+                <h6 class="col-6">۱۷۶ متر</h6>
+               </div>
+                <hr>
+               <div class="row">
+                <h5 class="col-6">خدمات انجام شده</h5>
+                <h6 class="col-6">بازسازی آشپزخانه، سرویس بهداشتی و حمام</h6>
+               </div>
+                </div>
+
+                      <!-- start gallery section -->
+             <div class="container mt-4">
+                <h3 class="text-center">تصاویر</h3>
+                <div class="row mt-3">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide">
+                                <img src="asset/img/projects/sample-project/7-1-768x499.webp" alt="sample project photo">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="asset/img/projects/sample-project/7-1-768x499.webp" alt="sample project photo">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="asset/img/projects/sample-project/7-1-768x499.webp" alt="sample project photo">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="asset/img/projects/sample-project/7-1-768x499.webp" alt="sample project photo">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="asset/img/projects/sample-project/7-1-768x499.webp" alt="sample project photo">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="asset/img/projects/sample-project/7-1-768x499.webp" alt="sample project photo">
+                            </div>
+
+                        </div>
+                       
+                        
+                    <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+             </div>
+            <!-- end gallery section -->
+
+            </div>
+
+      
+        </div>
+             <!-- start other projects -->
+        <div class="container mb-5">
+            <h4 class="text-center">
+                <span class="main-title">سایر پروژه ها
+                    <span class="back-title">other projects</span>
+                </span>
+
+            </h4>
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-stretch mb-1">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+                        <div class="box-card d-flex flex-column">
+                            <div class="img-part mb-3">
+                                <img src="./asset/img/roomsquare.webp" alt="sample picture">
+                            </div>
+                            <div class="title-part mb-3 flex-1">
+                                <h6><a>ساخت ویلا در شمال</a></h6>
+                            </div>
+                            <div class="btns d-flex justify-content-end">
+                                <button><a href="./sample-project.html">اطلاعات پروژه</a></button>
+                            </div>
+            
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+                        <div class="box-card d-flex flex-column">
+                            <div class="img-part mb-3">
+                                <img src="./asset/img/roomsquare.webp" alt="sample picture">
+                            </div>
+                            <div class="title-part mb-3 flex-1">
+                                <h6><a>ساخت ویلا در شمال</a></h6>
+                            </div>
+                            <div class="btns d-flex justify-content-end">
+                                <button><a href="./sample-project.html">اطلاعات پروژه</a></button>
+                            </div>
+            
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+                        <div class="box-card d-flex flex-column">
+                            <div class="img-part mb-3">
+                                <img src="./asset/img/roomsquare.webp" alt="sample picture">
+                            </div>
+                            <div class="title-part mb-3 flex-1">
+                                <h6><a>ساخت ویلا در شمال</a></h6>
+                            </div>
+                            <div class="btns d-flex justify-content-end">
+                                <button><a href="./sample-project.html">اطلاعات پروژه</a></button>
+                            </div>
+            
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+                        <div class="box-card d-flex flex-column">
+                            <div class="img-part mb-3">
+                                <img src="./asset/img/roomsquare.webp" alt="sample picture">
+                            </div>
+                            <div class="title-part mb-3 flex-1">
+                                <h6><a>ساخت ویلا در شمال</a></h6>
+                            </div>
+                            <div class="btns d-flex justify-content-end">
+                                <button><a href="./sample-project.html">اطلاعات پروژه</a></button>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+                <div class="btns text-center">
+                    <button><a href="">همه پروژه ها</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- end other projects -->
+       
+      <!-- start order registeration form -->
+      <div class="container-fluid order-form-wrapper d-flex justify-content-center align-items-center">
+        <div class="cover-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <h2>مشاوره رایگان</h2>
+                <p>برای دریافت مشاوره رایگان فرم زیر را پر کنید</p>
+            </div>
+            <form action="" class="row g-3" id="order-form">
+                <div class="col-12 col-md-4">
+                    <input type="text" name="name" placeholder="نام و نام خانوادگی">
+                    <span class="error-msg"></span>
+                </div>
+                <div class="col-12 col-md-4">
+                    <input type="tel" name="phone" placeholder="شماره همراه">
+                    <span class="error-msg"></span>
+                </div>
+                <div class="col-12 col-md-4">
+                    <button type="submit" class="text-center">درخواست</button>
+                    <span class="success-msg"></span>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+    <!-- end order registeration form -->
+     </main>
+ <!-- start footer -->
+ <footer>
+    <div class="container">
+        <div class="row p-3">
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                <img src="./asset/img/logo-white.webp" alt="logo" class="logo">
+                <p>
+                    مجموعه دکوراسیون داخلی رویا یک برند خصوصی و حرفه‌ای در زمینه طراحی و اجرای فضاهای مسکونی، تجاری
+                    و اداری است که با تکیه بر تیمی متخصص، استراتژی دقیق و سلیقه‌ای منحصربه‌فرد، مسیر خود را فراتر از
+                    مرزهای معمول این صنعت ترسیم کرده است.
+                </p>
+            </div>
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                
+                <h5>دسترسی سریع</h5>
+           
+                <ul>
+                    <li><a href="./index.html">خانه</a></li>
+                    <li><a href="./about-us.html">درباره ما</a></li>
+                    <li><a href="./contact-us.html">تماس با ما</a></li>
+                    <li><a href="./archive-project.html">نمونه کارها</a></li>
+                    <li><a href="./archive-article.html">بلاگ</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                <div>
+                    <h5>تماس با ما</h5>
+                    <svg class="responsive-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                        xml:space="preserve">
+                        <path fill="white"
+                            d="M50 247.389H10C10 183.98 34.693 124.367 79.529 79.53 124.366 34.693 183.98 10 247.389 10v40C138.548 50 50 138.548 50 247.389z" />
+                        <path fill="white"
+                            d="M119.257 247.389h-40c0-92.708 75.424-168.132 168.132-168.132v40c-70.653 0-128.132 57.479-128.132 128.132z" />
+                        <path fill="white"
+                            d="M188.513 247.389h-40c0-54.52 44.355-98.875 98.875-98.875v40c-32.463-.001-58.875 26.411-58.875 58.875zM318.901 318.901c60.399-60.399 62.009-105.496 62.009-105.496l-41.071-41.071L444.53 67.642l37.452 37.452a68.312 68.312 0 0 1 19.868 52.84c-2.891 43.448-23.755 124.181-121.745 222.171S201.381 498.958 157.934 501.849a68.312 68.312 0 0 1-52.84-19.868L67.642 444.53l104.691-104.691 41.071 41.071s45.098-1.611 105.497-62.009z" />
+                        <path fill="white"
+                            d="m33.816 430.032 124.017-124.018 24.16 24.16L57.975 454.19zM454.197 57.977 330.179 181.995l-24.16-24.16L430.037 33.817z" />
+                    </svg>
+                    <span> تلفن: </span>
+                    <a class="ltr" href="tel:02177665544">۰۲۱-۷۷۶۶۵۵۴۴</a>
+                </div>
+
+                <div>
+                    <svg class="responsive-svg" xmlns="http://www.w3.org/2000/svg" width="13.892" height="10.407"
+                        viewBox="0 0 13.892 10.407">
+                        <path id="emailalt"
+                            d="M6.964,5.2.018,1.694V.867A.827.827,0,0,1,.276.251.845.845,0,0,1,.886,0H13.041a.845.845,0,0,1,.61.251.827.827,0,0,1,.258.617v.826Zm-.434.867H7.4L13.91,2.7V9.54a.879.879,0,0,1-.868.867H.887a.835.835,0,0,1-.61-.257.833.833,0,0,1-.258-.61V2.7Z"
+                            transform="translate(-0.018)" fill="white"></path>
+                    </svg>
+                    <span> ایمیل: </span>
+                    <a href="mailto:roya@gmail.com">roya@gmail.com</a>
+                </div>
+
+
+                <div>
+                    <svg class="responsive-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.807 13.699">
+                        <g transform="translate(-466.594 -434.467)">
+                            <path
+                                d="M12.278,2.25a4.4,4.4,0,0,0-4.4,4.4c0,3.425,4.4,9.3,4.4,9.3s4.4-5.871,4.4-9.3A4.4,4.4,0,0,0,12.278,2.25Zm0,5.838a1.434,1.434,0,1,1,1.434-1.434A1.435,1.435,0,0,1,12.278,8.088Z"
+                                transform="translate(458.719 432.217)" fill="aliceblue"></path>
+                        </g>
+                    </svg>
+                    <span> آدرس: </span>
+
+
+                    <span> پاسداران، گلستان ششم، پلاک ۷۶، واحد ۱۳ </span>
+                </div>
+
+                <div class="d-flex social-media mt-5">
+                    <a href="#" aria-label="Facebook">
+                     
+                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 509.64" fill="white"><path d="M115.613 0h280.774C459.974 0 512 52.026 512 115.612v278.415c0 63.588-52.026 115.613-115.613 115.613H287.015V332.805h69.253l14.365-78.229h-83.618v-27.667c0-41.341 16.218-57.241 58.194-57.241 13.04 0 23.533.317 29.576.953V99.706c-11.448-3.18-39.434-6.361-55.651-6.361-85.545 0-124.977 40.388-124.977 127.522v33.709h-52.79v78.229h52.79V509.64h-78.544C52.026 509.64 0 457.615 0 394.027V115.612C0 52.026 52.026 0 115.613 0z"/></svg>
+              
+                </a>
+                
+                
+                    <a href="#" aria-label="WhatsApp">
+                     
+                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 486 512.45" fill="white"><path fill-rule="nonzero" d="M431.14 49.98C418.41 38.23 366.94.88 252.32.37c0 0-135.18-8.15-201.07 52.29C14.57 89.35 1.66 143.03.3 209.59c-1.36 66.56-3.12 191.29 117.11 225.11h.12l-.08 51.61s-.77 20.89 12.99 25.15c16.64 5.17 26.41-10.71 42.29-27.83 8.73-9.4 20.77-23.2 29.84-33.75 82.23 6.92 145.47-8.9 152.65-11.24 16.61-5.38 110.56-17.42 125.84-142.14 15.77-128.55-7.63-209.87-49.92-246.52zM262.05 293.51s9.11.77 14.01-5.27l9.57-12.04c4.61-5.97 15.75-9.77 26.65-3.7 8.17 4.66 16.12 9.75 23.76 15.19 7.24 5.32 22.06 17.69 22.1 17.69 7.06 5.96 8.69 14.71 3.88 23.94 0 .05-.03.14-.03.19a99.99 99.99 0 01-19.9 24.5c-.1.05-.1.09-.18.14-6.86 5.73-13.59 8.99-20.21 9.78-.76.13-1.54.2-2.31.2-.21 0-.43-.01-.65-.02h-.26c-2.83 0-5.64-.45-8.33-1.32l-.22-.32c-10.2-2.87-27.22-10.07-55.57-25.71a329.568 329.568 0 01-46.68-30.86 234.842 234.842 0 01-21.01-18.6l-.71-.7-.71-.71v-.01l-.71-.71c-.24-.23-.47-.47-.71-.71a242.28 242.28 0 01-18.63-20.99c-11.5-14.62-21.94-30.35-30.84-46.69-15.64-28.37-22.84-45.38-25.71-55.59l-.32-.21c-.87-2.69-1.32-5.5-1.32-8.32v-.28c-.01-.24-.01-.48-.01-.71 0-.75.06-1.51.19-2.25.83-6.6 4.09-13.35 9.79-20.23.05-.08.09-.08.14-.18a99.407 99.407 0 0124.52-19.89c.05 0 .14-.05.19-.05 9.23-4.81 17.98-3.18 23.93 3.84.05.05 12.39 14.87 17.69 22.11 5.43 7.62 10.53 15.61 15.17 23.77 6.08 10.9 2.27 22.06-3.7 26.65l-12.03 9.57c-6.08 4.91-5.28 14.02-5.28 14.02s17.83 67.48 84.44 84.48zm111.22-62.38a6.449 6.449 0 01-6.43 6.48 6.449 6.449 0 01-6.48-6.43c-.15-19.74-3.17-37.36-9.04-52.85-5.8-15.29-14.42-28.5-25.86-39.65-11.49-11.2-24.38-19.64-38.67-25.3-14.37-5.69-30.14-8.59-47.32-8.71a6.47 6.47 0 01-6.43-6.49 6.468 6.468 0 016.48-6.43c18.9.13 36.24 3.33 52.03 9.58 15.86 6.28 30.17 15.64 42.93 28.08 12.81 12.49 22.46 27.28 28.94 44.36 6.41 16.88 9.69 36 9.85 57.36zm-34.05-13.17a6.456 6.456 0 11-12.91-.25c.47-21.98-5.98-40.27-19.36-54.89-6.67-7.28-14.65-12.94-23.96-17.01-9.43-4.12-20.27-6.62-32.52-7.52a6.465 6.465 0 01-6-6.91 6.472 6.472 0 016.91-6c13.71 1 25.96 3.85 36.78 8.58 10.94 4.78 20.38 11.49 28.32 20.15 15.71 17.17 23.29 38.45 22.74 63.85zm-33.26-11.58a6.462 6.462 0 01-6.15 6.76c-3.57.17-6.6-2.59-6.76-6.15-.55-11.08-3.5-19.39-8.84-24.91-5.27-5.44-13.19-8.44-23.78-9a6.47 6.47 0 01-6.13-6.78c.19-3.57 3.23-6.31 6.79-6.13 13.98.73 24.8 5.05 32.44 12.95 7.58 7.83 11.72 18.92 12.43 33.26zm139.12 80.9c-12.9 104.14-89.1 110.69-103.15 115.19-5.98 1.92-61.52 15.74-131.37 11.18 0 0-52.04 62.79-68.3 79.12-2.54 2.55-5.52 3.58-7.52 3.07-2.79-.68-3.56-4-3.53-8.84.04-6.92.44-85.76.44-85.76s-.06 0 0 0C29.95 373 35.87 266.84 37.03 211.25c1.15-55.59 11.6-101.13 42.62-131.76C135.38 29.01 250.2 36.55 250.2 36.55c96.97.42 143.43 29.62 154.2 39.4 35.78 30.63 54 103.93 40.68 211.3v.03z"/></svg>
+             
+                </a>
+                
+                <a href="#" aria-label="Telegram">
+                 
+                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" fill="white"><path d="M512 256C512 114.62 397.38 0 256 0S0 114.62 0 256s114.62 256 256 256 256-114.62 256-256zm-396.12-2.7c74.63-32.52 124.39-53.95 149.29-64.31 71.1-29.57 85.87-34.71 95.5-34.88 2.12-.03 6.85.49 9.92 2.98 2.59 2.1 3.3 4.94 3.64 6.93.34 2 .77 6.53.43 10.08-3.85 40.48-20.52 138.71-29 184.05-3.59 19.19-10.66 25.62-17.5 26.25-14.86 1.37-26.15-9.83-40.55-19.27-22.53-14.76-35.26-23.96-57.13-38.37-25.28-16.66-8.89-25.81 5.51-40.77 3.77-3.92 69.27-63.5 70.54-68.9.16-.68.31-3.2-1.19-4.53s-3.71-.87-5.3-.51c-2.26.51-38.25 24.3-107.98 71.37-10.22 7.02-19.48 10.43-27.77 10.26-9.14-.2-26.72-5.17-39.79-9.42-16.03-5.21-28.77-7.97-27.66-16.82.57-4.61 6.92-9.32 19.04-14.14z"/></svg>
+             
+                </a>
+                
+                    <a href="#" aria-label="Instagram">
+                        
+                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" fill="white"><path fill-rule="nonzero" d="M170.663 256.157c-.083-47.121 38.055-85.4 85.167-85.483 47.121-.092 85.407 38.03 85.499 85.16.091 47.129-38.047 85.4-85.176 85.492-47.112.09-85.399-38.039-85.49-85.169zm-46.108.091c.141 72.602 59.106 131.327 131.69 131.186 72.592-.141 131.35-59.09 131.209-131.692-.141-72.577-59.114-131.335-131.715-131.194-72.585.141-131.325 59.115-131.184 131.7zm237.104-137.091c.033 16.953 13.817 30.681 30.772 30.648 16.961-.033 30.689-13.811 30.664-30.764-.033-16.954-13.818-30.69-30.78-30.657-16.962.033-30.689 13.818-30.656 30.773zm-208.696 345.4c-24.958-1.087-38.511-5.234-47.543-8.709-11.961-4.629-20.496-10.178-29.479-19.094-8.966-8.95-14.532-17.46-19.202-29.397-3.508-9.032-7.73-22.569-8.9-47.527-1.269-26.982-1.559-35.077-1.683-103.432-.133-68.339.116-76.434 1.294-103.441 1.069-24.942 5.242-38.512 8.709-47.536 4.628-11.977 10.161-20.496 19.094-29.479 8.949-8.982 17.459-14.532 29.403-19.202 9.025-3.525 22.561-7.714 47.511-8.9 26.998-1.277 35.085-1.551 103.423-1.684 68.353-.132 76.448.108 103.456 1.295 24.94 1.086 38.51 5.217 47.527 8.709 11.968 4.628 20.503 10.144 29.478 19.094 8.974 8.95 14.54 17.443 19.21 29.412 3.524 9 7.714 22.553 8.892 47.494 1.285 26.999 1.576 35.095 1.7 103.433.132 68.355-.117 76.451-1.302 103.441-1.087 24.958-5.226 38.52-8.709 47.561-4.629 11.952-10.161 20.487-19.103 29.471-8.941 8.949-17.451 14.531-29.403 19.201-9.009 3.517-22.561 7.714-47.494 8.9-26.998 1.269-35.086 1.559-103.448 1.684-68.338.132-76.424-.125-103.431-1.294zM149.977 1.773c-27.239 1.285-45.843 5.648-62.101 12.018-16.829 6.561-31.095 15.354-45.286 29.604C28.381 57.653 19.655 71.944 13.144 88.79c-6.303 16.299-10.575 34.912-11.778 62.168C.172 178.264-.102 186.973.031 256.489c.133 69.508.439 78.234 1.741 105.547 1.302 27.231 5.649 45.828 12.019 62.093 6.569 16.83 15.353 31.088 29.611 45.288 14.25 14.201 28.55 22.918 45.404 29.438 16.282 6.295 34.902 10.583 62.15 11.778 27.305 1.203 36.022 1.468 105.521 1.335 69.532-.132 78.25-.439 105.555-1.733 27.239-1.303 45.826-5.665 62.1-12.019 16.829-6.586 31.095-15.353 45.288-29.611 14.191-14.251 22.917-28.55 29.428-45.405 6.304-16.282 10.592-34.903 11.777-62.134 1.195-27.322 1.478-36.048 1.344-105.556-.133-69.516-.447-78.225-1.741-105.523-1.294-27.255-5.657-45.844-12.019-62.118-6.577-16.829-15.352-31.079-29.602-45.287-14.25-14.192-28.55-22.935-45.404-29.429-16.29-6.305-34.903-10.601-62.15-11.779C333.747.164 325.03-.102 255.506.031c-69.507.133-78.224.431-105.529 1.742z"/></svg>
+              
+                </a>
+                
+                    <a href="#" aria-label="LinkedIn">
+                        
+                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"  fill="white"><path d="M474.919 0H38.592C17.72 0 0 16.504 0 36.841V475.14C0 495.496 11.629 512 32.492 512h436.327C489.718 512 512 495.496 512 475.14V36.841C512 16.504 495.809 0 474.919 0zM195.043 195.043h68.928v35.136h.755c10.505-18.945 41.541-38.177 79.921-38.177 73.655 0 94.214 39.108 94.214 111.538v135.321h-73.148V316.883c0-32.427-12.947-60.883-43.227-60.883-36.768 0-54.295 24.889-54.295 65.758v117.103h-73.148V195.043zM73.139 438.861h73.148V195.043H73.139v243.818zm82.289-329.148c0 25.258-20.457 45.715-45.715 45.715-25.258 0-45.715-20.457-45.715-45.715 0-25.258 20.457-45.715 45.715-45.715 25.258 0 45.715 20.457 45.715 45.715z"/></svg>
+               
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+    <!-- start copy right bar -->
+    <div class="copy-right container-fluid p-1 text-center">
+        <small class="mb-0">&copy; طراحی و توسعه توسط ارغوان امیری</small>
+    </div>
+    <!-- end copy right bar -->
+    <script src="./dist/aos/aos.js"></script>
+     <script src="./dist/swiper/swiper.js"></script>
+    <script src="./dist/bootstrap/bootstrap.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
