@@ -11,12 +11,13 @@
 </head>
 
 <body>
+    <div class="aos-wrapper">
     <!-- start header -->
     <header class="store-design-header header">
         <div class="cover-overlay"></div>
         <!-- start menu-bar and desktop nav -->
         <div id="menu-bar" class="ps-4 pe-4 d-flex">
-            <nav class="desktop-nav">
+            <nav class="desktop-nav" data-aos="fade-down">
                 <ul class="main-menu d-flex justify-content-center align-items-stretch ">
                     <li class="flex-1"><a href="index.html">خانه</a></li>
                     <li class="main-item flex-1">
@@ -49,7 +50,7 @@
                 </ul>
             </nav>
 
-            <div id="hamber">
+            <div id="hamber" data-aos="fade-down">
                 <button>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
                         class="main-grid-item-icon" fill="white" stroke="white" stroke-linecap="round"
@@ -61,11 +62,11 @@
                 </button>
             </div>
 
-            <div class="logo-wrapper flex-1">
+            <div class="logo-wrapper flex-1" data-aos="fade-down">
                 <img src="./asset/img/logo-white.webp" alt="logo" class="logo">
             </div>
 
-            <nav class="desktop-nav">
+            <nav class="desktop-nav" data-aos="fade-down">
                 <ul class="main-menu d-flex justify-content-center align-items-stretch">
                     <li class="flex-1"><a href="./archive-article.html">وبلاگ</a></li>
                     <li class="flex-1"><a href="./about-us.html">درباره ما</a></li>
@@ -451,6 +452,7 @@
         <small class="mb-0">&copy; طراحی و توسعه توسط ارغوان امیری</small>
     </div>
     <!-- end copy right bar -->
+</div>
     <script src="./dist/aos/aos.js"></script>
     <script src="./dist/bootstrap/bootstrap.js"></script>
     <script src="./script.js"></script>

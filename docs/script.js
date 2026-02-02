@@ -377,29 +377,18 @@ if(menu_bar){
         }
     });
 
-    // var service_swiper = new Swiper(".serviceSwiper", {
-    //     slidesPerView: 1,
-    //     spaceBetween: 30,
-    //     pagination: {
-    //         el: ".swiper-pagination",
-    //         clickable: true,
-    //     },
-    //     loop: true,
-    //     lazy:{
-    //         loadPrevNext: true
-    //     },
-    //     on:{
-    //         init: function(){
-    //             document.querySelectorAll('.swiper').forEach(swiper=>{
-    //                 swiper.style.visibility = 'visible';
-    //                 swiper.style.opacity = 1;
-    //             })
-    //         }
-    //     },
-    //     breakpoints:{
-    //         768:{slidesPerView: 2},
-    //         1024:{slidesPerView: 3},
-    //         1440:{slidesPerView: 4}
-    //     }
-    // });
+
+
 }
+
+
+    //AOS
+    if(typeof AOS !== 'undefined'){
+        setTimeout(()=>{
+            AOS.init({
+                once: true,
+                duration: 700,
+                easing: "ease-out-cubic"
+            },1000);
+        })
+    }

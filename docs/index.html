@@ -12,12 +12,13 @@
 
 <body>
     <!-- start header -->
+    <div class="aos-wrapper">
     <header class="home-header header">
         <div class="cover-overlay"></div>
         <!-- start menu-bar and desktop nav -->
        
-        <div id="menu-bar" class="ps-4 pe-4 d-flex">
-            <nav class="desktop-nav">
+        <div id="menu-bar" class="ps-4 pe-4 d-flex" >
+            <nav class="desktop-nav" data-aos="fade-down">
                 <ul class="main-menu d-flex justify-content-center align-items-stretch ">
                     <li class="flex-1"><a href="index.html">خانه</a></li>
                     <li class="main-item flex-1">
@@ -50,7 +51,7 @@
                 </ul>
             </nav>
 
-            <div id="hamber">
+            <div id="hamber" data-aos="fade-down">
                 <button>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
                         class="main-grid-item-icon" fill="white" stroke="white" stroke-linecap="round"
@@ -62,11 +63,11 @@
                 </button>
             </div>
 
-            <div class="logo-wrapper flex-1">
+            <div class="logo-wrapper flex-1" data-aos="fade-down">
                 <img src="./asset/img/logo-white.webp" alt="logo" class="logo">
             </div>
 
-            <nav class="desktop-nav">
+            <nav class="desktop-nav" data-aos="fade-down">
                 <ul class="main-menu d-flex justify-content-center align-items-stretch">
                     <li class="flex-1"><a href="./archive-article.html">وبلاگ</a></li>
                     <li class="flex-1"><a href="./about-us.html">درباره ما</a></li>
@@ -138,15 +139,16 @@
         <div class="hero-bar">
             <h1 class="text-center">مجموعه دکوراسیون داخلی رویا</h1>
             <div class="btns mt-5 gap-2 d-flex justify-content-center">
-                <button><a href="" id="to-design">طراحی و ساخت</a></button>
-                <button><a href="" id="to-rebuild">بازسازی</a></button>
-                <button><a href="" id="to-decoration">دکوراسیون داخلی</a></button>
+                <button data-aos="fade-left"><a href="" id="to-design">طراحی و ساخت</a></button>
+                <button data-aos="fade"><a href="" id="to-rebuild">بازسازی</a></button>
+                <button data-aos="fade-right"><a href="" id="to-decoration">دکوراسیون داخلی</a></button>
             </div>
         </div>
         <!-- end hero bar -->
     </header>
     <!-- end header -->
-    <main>
+ 
+    <main class="aos-wrapper">
         <!-- start fixed phone -->
 
         <button id="fixed-phone">
@@ -168,7 +170,7 @@
         <!-- end fixed phone -->
         <!-- start services -->
         <div class="container mt-5 mb-5">
-            <h2 class="text-center">
+            <h2 class="text-center" data-aos="fade-down">
                 <span class="main-title">خدمات ما
                     <span class="back-title">services</span>
                 </span>
@@ -177,7 +179,7 @@
 
 
 
-            <div id="design" class="dashed-box services mb-5 row d-flex justify-content-center">
+            <div id="design" class="dashed-box services mb-5 row d-flex justify-content-center" data-aos="fade-left">
 
                 <div class="serv-description">
                     <h4>طراحی و ساخت</h4>
@@ -247,7 +249,7 @@
 
             </div>
 
-            <div id="rebuild" class="dashed-box services mb-5 row d-flex justify-content-center">
+            <div id="rebuild" class="dashed-box services mb-5 row d-flex justify-content-center" data-aos="fade-right">
 
                 <div class="serv-description">
                     <h4>بازسازی</h4>
@@ -318,7 +320,7 @@
                 </div>
             </div>
 
-            <div id="decoration" class="dashed-box services mb-5 row d-flex justify-content-center">
+            <div id="decoration" class="dashed-box services mb-5 row d-flex justify-content-center" data-aos="fade-left">
 
                 <div class="serv-description">
                     <h4>دکوراسیون</h4>
@@ -366,15 +368,15 @@
 
         <!-- start why us -->
         <div class="container mb-5">
-            <h2 class="text-center">
+            <h2 class="text-center" data-aos="fade-down">
                 <span class="main-title">چرا رویا؟
                     <span class="back-title">why us?</span>
                 </span>
 
             </h2>
-            <div class="d-flex flex-column gap-2 align-items-center mt-4">
+            <div class="d-flex flex-column gap-2 align-items-center mt-4 aos-wrapper">
 
-                <div class="reason-wrapper d-flex justify-content-start">
+                <div class="reason-wrapper d-flex justify-content-start" data-aos="fade-left">
                     <div class="reason">
                         <h5 class="why-title">مشاوره تلفنی رایگان</h5>
                         <p class="why-details">مجموعه ی رویا در زمینه انواع خدمات کابینت و کمد سازی و نجاری به شما
@@ -386,7 +388,7 @@
                     </div>
                 </div>
 
-                <div class="reason-wrapper d-flex justify-content-end">
+                <div class="reason-wrapper d-flex justify-content-end" data-aos="fade-right">
                     <div class="reason">
                         <h5 class="why-title">متخصصین درجه یک</h5>
                         <p class="why-details">مجموعه ی رویا مجموعه‌ای از دکوراتور ها، نجار ها و کابینت سازان در 11
@@ -397,7 +399,7 @@
                     </div>
                 </div>
 
-                <div class="reason-wrapper d-flex justify-content-start">
+                <div class="reason-wrapper d-flex justify-content-start" data-aos="fade-left">
                     <div class="reason">
                         <h5 class="why-title">خدمات تضمینی</h5>
                         <p class="why-details">در مجموعه ی رویا به شما تضمین هایی مثل ضمانت قیمت منصفانه و ضمانت پیش
@@ -413,7 +415,7 @@
         </div>
         <!-- end why us -->
         <!-- start experience bar -->
-        <div class="container-fluid exprience">
+        <div class="container-fluid exprience" data-aos="fade-up">
             <div class="container">
                 <div class="row d-flex justify-content-evenly">
                     <div class="col-6 col-sm-4">
@@ -434,14 +436,14 @@
         <!-- end experience bar -->
 
         <!-- start order registeration form -->
-        <div class="container-fluid mb-5 order-form-wrapper d-flex justify-content-center align-items-center">
+        <div class="container-fluid mb-5 order-form-wrapper d-flex justify-content-center align-items-center" data-aos="fade-up">
             <div class="cover-overlay"></div>
             <div class="container">
-                <div class="row">
+                <div class="row" data-aos="fade">
                     <h2>ثبت سفارش طراح</h2>
                     <p>برای ثبت سفارش طراحی خود فرم زیر را پر کنید</p>
                 </div>
-                <form action="" class="row g-3" id="order-form">
+                <form action="" class="row g-3" id="order-form" data-aos="fade">
                     <div class="col-12 col-md-4">
                         <input type="text" name="name" placeholder="نام و نام خانوادگی">
                         <span class="error-msg"></span>
@@ -463,13 +465,13 @@
 
         <!-- start projects -->
         <div class="container mb-5">
-            <h2 class="text-center">
+            <h2 class="text-center" data-aos="fade-down">
                 <span class="main-title">پروژه ها
                     <span class="back-title">projects</span>
                 </span>
 
             </h2>
-            <div class="container">
+            <div class="container"  data-aos="fade-left">
                 <div class="row d-flex justify-content-center align-items-stretch mb-1">
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
                         <div class="box-card d-flex flex-column">
@@ -537,13 +539,13 @@
 
         <!-- start articles -->
         <div class="container mb-5">
-            <h2 class="text-center">
+            <h2 class="text-center" data-aos="fade-down">
                 <span class="main-title">مقالات
                     <span class="back-title">articles</span>
                 </span>
 
             </h2>
-            <div class="container">
+            <div class="container" data-aos="fade-left">
                 <div class="row d-flex justify-content-center align-items-stretch mb-1">
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
                         <div class="box-card d-flex flex-column">
@@ -604,12 +606,13 @@
                 </div>
             </div>
         </div>
+
         <!-- end articles -->
 
     </main>
     <!-- start footer -->
     <footer>
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="row p-3">
                 <div class="col-12 col-md-4 mb-3 mb-md-0">
                     <img src="./asset/img/logo-white.webp" alt="logo" class="logo">
@@ -739,10 +742,11 @@
     </footer>
     <!-- end footer -->
     <!-- start copy right bar -->
-    <div class="copy-right container-fluid p-1 text-center">
+    <div class="copy-right container-fluid p-1 text-center" data-aos="fade-up">
         <small class="mb-0">&copy; طراحی و توسعه توسط ارغوان امیری</small>
     </div>
     <!-- end copy right bar -->
+</div>
     <script src="./dist/aos/aos.js"></script>
     <script src="./dist/bootstrap/bootstrap.js"></script>
     <script src="./script.js"></script>

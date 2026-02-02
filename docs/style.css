@@ -27,12 +27,15 @@
    
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: dirooz, 'Segue UI', Tahoma, sans-serif;
-
 }
 
 h1{
@@ -74,6 +77,10 @@ select:focus,
 textarea:focus {
     border: 1px solid rgb(27, 26, 26);
     box-shadow: 0 0 5px 3px rgb(83, 94, 126, 0.1);
+}
+
+.aos-wrapper{
+    overflow-x: hidden;
 }
 
 .responsive-svg {
