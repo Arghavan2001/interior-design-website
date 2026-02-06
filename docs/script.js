@@ -402,13 +402,13 @@ function toPersianNumber(number) {
     return number.toString().replace(/\d/g, d => persianDigits[d]);
   }
 
-const counter1 = new countUp.CountUp('year', 15, { duration: 3, formattingFn: toPersianNumber });
+const counter1 = new countUp.CountUp('year', 15, { duration: 3, formattingFn: toPersianNumber, enableScrollSpy: true  });
 if (!counter1.error) counter1.start();
 
 // شمارنده دوم
-const counter2 = new countUp.CountUp('satisfication', 3200, { duration: 3, formattingFn: toPersianNumber });
+const counter2 = new countUp.CountUp('satisfication', 3200, { duration: 3, formattingFn: toPersianNumber, enableScrollSpy: true });
 if (!counter2.error) counter2.start();
 
 // شمارنده سوم
-const counter3 = new countUp.CountUp('projects', 780, { duration: 2, formattingFn: toPersianNumber });
+const counter3 = new countUp.CountUp('projects', 780, { duration: 2, formattingFn: toPersianNumber, enableScrollSpy: true  });
 if (!counter3.error) counter3.start();
