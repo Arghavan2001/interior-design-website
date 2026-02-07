@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     //handle menu through
     let scrollY = window.scrollY;
-    const regular_menu = document.getElementById('regular-menu');
+
 
     if(scrollY > 0.8 * vp_height){
         if(menu_bar){
@@ -61,10 +61,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         menu_bar.style.top = `0`;
         }
 
-        if(regular_menu){
-            regular_menu.style.top = 0;
-          
-        }
+     
   
     }else{
         if(menu_bar){
@@ -72,13 +69,14 @@ document.addEventListener('DOMContentLoaded',()=>{
             menu_bar.style.top = `-${scrollY}px`;
      
             }
+
     }
        
     
     //handle transition through scroll
     window.addEventListener('scroll', () => {
         let scrollY = window.scrollY;
-        const regular_menu = document.getElementById('regular-menu');
+
        
 
         if (scrollY <=  0.8 * vp_height) {
@@ -89,11 +87,7 @@ document.addEventListener('DOMContentLoaded',()=>{
                 menu_bar.style.backgroundColor = 'transparent';
             }
            
-            if(regular_menu){
-              
-                regular_menu.style.top = `-${scrollY}px`;
-        
-            }
+          
             
         } else if(scrollY > 0.8 * vp_height){
             if(menu_bar){
@@ -102,10 +96,6 @@ document.addEventListener('DOMContentLoaded',()=>{
             menu_bar.style.top = `0`;
             }
 
-            if(regular_menu){
-                regular_menu.style.top = 0;
-              
-            }
       
         }
 
@@ -397,6 +387,8 @@ if(menu_bar){
 
 //CounterUp
 
+if(typeof countUp !== 'undefined'){
+
 function toPersianNumber(number) {
     const persianDigits = ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'];
     return number.toString().replace(/\d/g, d => persianDigits[d]);
@@ -412,3 +404,5 @@ if (!counter2.error) counter2.start();
 // شمارنده سوم
 const counter3 = new countUp.CountUp('projects', 780, { duration: 2, formattingFn: toPersianNumber, enableScrollSpy: true  });
 if (!counter3.error) counter3.start();
+
+}
